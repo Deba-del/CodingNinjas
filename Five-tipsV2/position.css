@@ -1,0 +1,60 @@
+body{
+    font-size: 20px;
+}
+
+#outer-div{
+    border-top: 40px;
+    border-bottom: 40px;
+    border-left: 4px;
+    border-right: 4px;
+    border-style: dotted;
+    border-radius: 10px 40px;
+    background-color: beige;
+    position: relative;
+}
+
+/* positions static-default position*/ 
+
+/* relative - position respective to its original position */
+#div1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative;
+    left: 450px;
+    top: 50px;
+    /* space will be left in its position */
+}
+
+/* absolute - positive with respect to nearest relative parent element */
+#div2{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    /* No space will be left */
+}
+
+/* fixed- position fixed with respect to viewport */
+#div3{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    box-sizing: border-box;
+    /* No space will be left */
+}
+
+/* sticky - mixed of relative and fixed */
+#div4{
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 50px;
+    
+}

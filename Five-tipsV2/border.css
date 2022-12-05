@@ -1,0 +1,38 @@
+#div1{
+    background-color: blueviolet;
+    width: 50vw;
+    height: 50vh;
+    border: 7px solid darkblue;
+    border-radius: 6px;
+}
+
+#div2{
+    background-color: darkseagreen;
+    width: 50%;
+    height: 50%;
+    border-width: 6px 8px 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+#div3{
+    background-color: bisque;
+    width: 50%;
+    height: 50%;
+    border-width: 3px 5px 7px 9px;
+            /* top right bottom left */
+    border-style: dotted;
+    border-color:brown;
+}
+
+#para{
+    font-size: 20px;
+    text-transform: uppercase;
+    border-left: 9px solid gray;
+    font-weight: 900; /* 100-900 */
+    text-align: center;
+    line-height: 70px;
+    text-decoration: underline;
+    font-style: italic;
+    word-spacing: 23px;
+}

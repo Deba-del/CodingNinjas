@@ -1,0 +1,9 @@
+#div1{
+    width: 50vw;
+    height: 50vh;
+    background-image: url("image/coding_ninjas.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
