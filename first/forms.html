@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- 
+        (action - url to send information)
+        (method="post" will show information in Chrome>Inspect>Network>Payload)
+        (method="get" will post information on http url bar)
+        post is more secure than get
+    -->
+    <form action="" method="post">
+
+        <div>
+            <label for="username"><b>Username</b></label> <br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="time"><b>Current time</b></label> <br>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <div>
+            <label for="email"><b>Email</b></label> <br>
+            <input type="email" id="email" name="email" placeholder="abc@example.com">
+        </div>
+        <div>
+            <label for="password"><b>Password</b></label> <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="phone"><b>Phone No.</b></label> <br>
+            <input type="number" id="phone" name="phone" required>
+        </div>
+
+        <!-- radio buttons -->
+        <div>
+            <p><b>Gender:</b></p>
+            <input type="radio" name="gender" value="male" checked>Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other 
+        </div>
+        <div>
+            <label for="range"><b>Rating</b></label> <br>
+            <input type="range" id="range" min="0" max="50" step="10" required>
+        </div>
+        <div>
+            <label for="dob"><b>Date of Birth</b></label> <br>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- checkbox -->
+        <div>
+            <p><b>Courses Done:</b></p>
+            <input type="checkbox" name="courses" value="c++">C++ <br>
+            <input type="checkbox" name="courses" value="c#">C# <br>
+            <input type="checkbox" name="courses" value="python" checked disabled>Python <br>
+            <input type="checkbox" name="courses" value="java">Java
+        </div>
+
+        <!-- dropdown lists -->
+        <div>
+            <!-- There's also <optgroup> -->
+            <!-- <label for="b"><b>Favorite Browser</b></label>
+            <input list="browsers" name="browsers" id="b">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist> -->
+            <p><b>Browser Choice</b></p>
+            <select name="browser" id="browser" multiple> <!-- multiple attribute allows multiple choice -->
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome" selected>Chrome</option>
+                <option value="Opera">Opera</option>
+            </select>
+        </div>
+
+        <!-- file -->
+        <div>
+            <label for="browsefile">Confirmation</label> <br>
+            <input type="file" id="browsefile" name="filename" required>
+        </div>
+
+        <!-- textarea -->
+        <div>
+            <label for="message"><b>Leave a message</b></label> <br>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        </div>
+
+        <!-- submit button -->
+        <div>
+            <input type="submit" id="submit">
+        </div>
+
+        <!-- Buttons -->
+        <div>
+            <input type="button" value="LogIn"> 
+            <button type="reset">Reset</button> <!-- img can be used as well -->
+            <!-- onclick -->
+            <button onclick="alert('Learn HTML')">CLICK ME</button>
+            <button onclick="location.href='index.html'">Home</button>
+            <button>Submit</button>
+        </div>
+
+        <!-- fieldset & legend -->
+        <fieldset>
+            <legend>Subscribe to Newsletter</legend>
+            Name: <input type="text" name="Name"><br>
+            Email: <input type="email" name="email">
+        </fieldset>
+
+    </form>
+</body>
+</html>
